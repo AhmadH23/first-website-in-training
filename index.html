@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>My Blog</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+    <!---Navigation Bar---->
+    <div class="my-nav-bar">
+        <a href="index.html">Home</a><br>
+        <a href="contact.html">Contact Us</a><br>
+        <a href="#" onclick="darkMode()">Toggle Dark Mode</a>
+    </div>
+
+    <!---Space for new blog---->
+    <div class="blog">
+        <div class="blog-title">
+            <span id="new-title"></span>
+        </div>
+        <div class="blog-author">
+            <span id="new-author"></span>
+        </div>
+        <div class="blog-content">
+            <span id="new-content"></span>
+        </div>
+    </div>
+
+    <!---Dummy Blog---->
+    <div class="blog">
+        <div class="blog-title">
+            An example title
+        </div>
+        <div class="blog-author">
+            by Person McPersonface
+        </div>
+        <div class="blog-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis sem vel justo tempus varius sed sed
+                nunc.
+                Morbi dapibus ornare lorem a tempor. Nulla nec dolor ut mi tincidunt auctor sed eleifend erat. Nunc
+                feugiat leo
+                a libero gravida lacinia. Suspendisse porta elit est, ut congue diam sagittis quis.</p>
+            <p>Vestibulum venenatis nulla sagittis pharetra posuere. Phasellus vitae lacus vel lectus accumsan rutrum id
+                vitae
+                leo. Vivamus iaculis sapien eros, nec maximus purus vulputate a. Curabitur lacinia sit amet arcu sed
+                mollis.
+                Integer non dolor eu ligula tempus volutpat.</p>
+            <p>Pellentesque luctus eleifend est, ac eleifend purus porta eget. Praesent condimentum tellus nec urna
+                consectetur vehicula. Nam a turpis placerat lacus blandit hendrerit. Vestibulum molestie arcu sit amet
+                dictum
+                convallis. Nunc mauris diam, viverra ac magna in, consequat vehicula metus.</p>
+        </div>
+    </div>
+
+    <!----Form for blog submissions--->
+
+    <div>
+        <div class="contact-form">
+            <form id="submission-form" action="/" method="GET" onsubmit="return validateForm()">
+                <div>
+                    <label for="entry-name">Entry Name *</label><br>
+                    <input id="entry-name" name="entry-name" type="text" class="form"><br>
+
+                    <label for="author-name">Author *</label><br>
+                    <input id="author-name" name="author-name" type="text" class="form"><br>
+
+                    <label for="blog-content">Your Message *</label><br>
+                    <textarea id="blog-content" name="blog-content" class="textarea-input"></textarea><br>
+
+                    <input type="submit" class="submit-btn" onclick="submitForm()"></input>
+                </div>
+
+                <script src="script.js"></script>
+
+</body>
+
+</html>

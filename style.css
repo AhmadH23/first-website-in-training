@@ -1,0 +1,66 @@
+html,
+body {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #37371F;
+    margin: 10px;
+}
+
+a {
+    color: #697041;
+    font-weight: bolder;
+}
+
+a:hover {
+    color: #90BE6D;
+}
+
+/*NAV BAR STYLING*/
+.my-nav-bar {
+    overflow: hidden;
+    float: right;
+}
+
+/*DARK MODE STYLING*/
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+/*BLOG STYLING*/
+.blog {
+    width: 75%;
+}
+
+.blog-title {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.blog-author {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.blog-content {
+    padding: 10px;
+}
+
+/*SUBMISSION FORMS STYLING*/
+.form-input,
+.submit-btn,
+.form,
+.textarea-input {
+    border: 1px solid #37371F;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #37371F;
+    margin: 10px;
+}
+
+.textarea-input {
+    width: 300px;
+    height: 100px;
+}
